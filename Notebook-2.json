@@ -16,7 +16,10 @@
         {
             "cell_type": "code",
             "source": [
-                "SELECT(5+5)"
+                "CREATE TABLE employee(ID int IDENTITY(1,1) Primary key,\r\n",
+                "Name varchar(50),\r\n",
+                "Salary int,\r\n",
+                "Branch varchar(50))"
             ],
             "metadata": {
                 "azdata_cell_guid": "296d82a8-e4b9-4d04-be78-fa39d4a8c9fe",
@@ -26,46 +29,104 @@
                 {
                     "output_type": "display_data",
                     "data": {
-                        "text/html": "(1 row affected)"
+                        "text/html": "Commands completed successfully."
                     },
                     "metadata": {}
                 },
                 {
                     "output_type": "display_data",
                     "data": {
-                        "text/html": "Total execution time: 00:00:00.003"
+                        "text/html": "Total execution time: 00:00:00.038"
+                    },
+                    "metadata": {}
+                }
+            ],
+            "execution_count": 6
+        },
+        {
+            "cell_type": "code",
+            "source": [
+                "SELECT * from employee"
+            ],
+            "metadata": {
+                "azdata_cell_guid": "0b433def-f6a9-420f-890e-63804cb6f1f0",
+                "language": "sql"
+            },
+            "outputs": [
+                {
+                    "output_type": "display_data",
+                    "data": {
+                        "text/html": "(0 rows affected)"
+                    },
+                    "metadata": {}
+                },
+                {
+                    "output_type": "display_data",
+                    "data": {
+                        "text/html": "Total execution time: 00:00:00.005"
                     },
                     "metadata": {}
                 },
                 {
                     "output_type": "execute_result",
                     "metadata": {},
-                    "execution_count": 1,
+                    "execution_count": 7,
                     "data": {
                         "application/vnd.dataresource+json": {
                             "schema": {
                                 "fields": [
                                     {
-                                        "name": "(No column name)"
+                                        "name": "ID"
+                                    },
+                                    {
+                                        "name": "Name"
+                                    },
+                                    {
+                                        "name": "Salary"
+                                    },
+                                    {
+                                        "name": "Branch"
                                     }
                                 ]
                             },
-                            "data": [
-                                {
-                                    "0": "10"
-                                }
-                            ]
+                            "data": []
                         },
                         "text/html": [
                             "<table>",
-                            "<tr><th>(No column name)</th></tr>",
-                            "<tr><td>10</td></tr>",
+                            "<tr><th>ID</th><th>Name</th><th>Salary</th><th>Branch</th></tr>",
                             "</table>"
                         ]
                     }
                 }
             ],
-            "execution_count": 1
+            "execution_count": 7
+        },
+        {
+            "cell_type": "code",
+            "source": [
+                ""
+            ],
+            "metadata": {
+                "azdata_cell_guid": "2cbc8c00-f569-4e50-8637-705bdd0f026d",
+                "language": "sql"
+            },
+            "outputs": [
+                {
+                    "output_type": "display_data",
+                    "data": {
+                        "text/html": "Commands completed successfully."
+                    },
+                    "metadata": {}
+                },
+                {
+                    "output_type": "display_data",
+                    "data": {
+                        "text/html": "Total execution time: 00:00:00.039"
+                    },
+                    "metadata": {}
+                }
+            ],
+            "execution_count": 5
         }
     ]
 }
