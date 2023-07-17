@@ -1,3 +1,2 @@
-CREATE USER fivetran PASSWORD 'fivetran';
-GRANT CREATE, TEMPORARY ON DATABASE postgres TO fivetran;
-
+select schema_name
+from information_schema.schemata;
